@@ -10,7 +10,6 @@
 .DS_Store
 /build
 /captures
-/src/main/java/com/sonssetiana/networkboundresouce/configs/Env.kt
 .externalNativeBuild
 .cxx
 local.properties

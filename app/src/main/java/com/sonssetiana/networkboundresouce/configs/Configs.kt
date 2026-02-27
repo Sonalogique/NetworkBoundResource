@@ -1,6 +1,9 @@
 package com.sonssetiana.networkboundresouce.configs
 
 object Configs {
+    const val BASE_URL = "https://api.themoviedb.org/3/"
+
+    const val IMAGE_BASE_URL = "https://image.tmdb.org/t/p/w185"
     const val MSG_UNKNOWN = "Unknown error happened, please contact the administrator."
     const val MSG_HOST_NOT_FOUND = "Host not found"
     const val MSG_FAILED_CONNECT_TO_SERVER = "Failed to connect to server"

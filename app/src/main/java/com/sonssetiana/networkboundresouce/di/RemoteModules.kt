@@ -5,7 +5,6 @@ import com.chuckerteam.chucker.api.ChuckerInterceptor
 import com.google.gson.Gson
 import com.google.gson.GsonBuilder
 import com.sonssetiana.networkboundresouce.configs.Configs
-import com.sonssetiana.networkboundresouce.configs.Env
 import com.sonssetiana.networkboundresouce.data.remote.network.ApiInterceptor
 import com.sonssetiana.networkboundresouce.data.remote.service.MovieServices
 import okhttp3.OkHttpClient
@@ -53,7 +52,7 @@ val remoteModule = module {
 
     single {
         Retrofit.Builder()
-            .baseUrl(Env.BASE_URL)
+            .baseUrl(Configs.BASE_URL)
             .addConverterFactory(GsonConverterFactory.create())
             .client(get())
             .build()

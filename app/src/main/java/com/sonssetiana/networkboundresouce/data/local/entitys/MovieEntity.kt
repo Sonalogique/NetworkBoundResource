@@ -3,7 +3,7 @@ package com.sonssetiana.networkboundresouce.data.local.entitys
 import androidx.room.ColumnInfo
 import androidx.room.Entity
 import androidx.room.PrimaryKey
-import com.sonssetiana.networkboundresouce.configs.Env
+import com.sonssetiana.networkboundresouce.configs.Configs
 
 @Entity(tableName = "movie")
 data class MovieEntity(
@@ -33,6 +33,6 @@ data class MovieEntity(
     val voteCount: Int
 ) {
     fun getPosterUrl(): String {
-        return Env.IMAGE_BASE_URL + posterPath
+        return Configs.IMAGE_BASE_URL + posterPath
     }
 }
